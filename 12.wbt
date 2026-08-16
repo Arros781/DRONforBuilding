@@ -1,0 +1,67 @@
+#VRML_SIM R2025b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/ef17e6129de36d2356e5bfc9a9cc5e536b39fe46/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/ef17e6129de36d2356e5bfc9a9cc5e536b39fe46/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/ef17e6129de36d2356e5bfc9a9cc5e536b39fe46/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/ef17e6129de36d2356e5bfc9a9cc5e536b39fe46/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/ef17e6129de36d2356e5bfc9a9cc5e536b39fe46/projects/humans/pedestrian/protos/Pedestrian.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.11527606694111789 -0.09152045823276943 -0.9891084036218936 4.472958106036146
+  position 2.944695965276785 -13.298260739479145 2.608033478341518
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Mavic2Pro {
+  hidden position_0_0 3.275968500487683e-10
+  hidden linearVelocity_0 0.34865243265364393 0.16549693914121175 -0.17075786714125402
+  hidden angularVelocity_0 1.6206255200308884e-06 6.190630153856837e-06 -0.11221581779372344
+  hidden position_5_0 0.6999999842970747
+  hidden linearVelocity_5 0.3447049694687079 0.1517979520551382 -0.1707586809064668
+  hidden angularVelocity_5 1.6204159133612513e-06 6.190763332211195e-06 -0.11221588215453923
+  hidden rotation_6 0 1 0 0.6999999842970748
+  hidden position_6_0 -1.4851397263532427e-10
+  hidden linearVelocity_6 0.34531152116514524 0.15167460941948674 -0.17075867796586422
+  hidden angularVelocity_6 1.5913351898239377e-06 6.059080991705046e-06 -0.11221588233079306
+  hidden linearVelocity_7 0.346339177348654 0.15201451061672314 -0.17075864357137083
+  hidden angularVelocity_7 1.6235126320883878e-06 6.052012421667511e-06 -0.1122159102851742
+  translation 0.12164004046428326 -4.507455357267229 0.07740514192311178
+  rotation 0.00770904852252379 0.01572514793365817 -0.9998466333860119 0.22118635515366036
+  controller "drone_yolo_controller"
+  cameraSlot [
+    Camera {
+      width 404
+      height 242
+    }
+  ]
+}
+Floor {
+  size 50 50
+}
+Pedestrian {
+  translation 1.3678 -5.38894 1.27
+  rotation 0 0 -1 2.28747
+}
+Pedestrian {
+  translation -5.83816 -7.5343 1.37
+  rotation 0 0 -1 0.431967
+  name "pedestrian(1)"
+}
+Solid {
+  translation 0 -17.26 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "C:/Users/msi/Desktop/Новая папка (2)/arros12.stl"
+        ]
+      }
+    }
+  ]
+}
